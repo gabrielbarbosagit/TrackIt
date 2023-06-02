@@ -51,7 +51,7 @@ export default function HabitsPage() {
 
                 </TitleContainer>
 
-                =<HabitCardContainer>
+                <HabitCardContainer>
 
                     {habits.map((h, i) => (
 
@@ -67,10 +67,9 @@ export default function HabitsPage() {
                     ))}
 
                 </HabitCardContainer>
-                 : (
-
+                
                     <p> Você ainda não tem nenhum hábito cadastrado. Adicione um hábito para começar trackear! </p>
-                )
+                
 
            
             

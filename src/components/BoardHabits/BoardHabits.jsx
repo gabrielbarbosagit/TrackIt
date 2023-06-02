@@ -18,7 +18,7 @@ export default function BoardHabits( {
 }) {
 
     const { config } = useContext(UserDataContext);
-    const daysWeek = [ "D", "S", "T", "Q", "QT", "S", "S" ];
+    const daysWeek = [ "D", "S", "T", "Q", "Q", "S", "S" ];
 
     
     function deleteHabits(){
@@ -58,7 +58,7 @@ return (
         {day}
              
     </Days>
-        ))};
+        ))}
         
         
     </DayWeekContainer>    

@@ -56,7 +56,7 @@ border: 1px solid;
 
 ${(props) => (!props.days.includes(props.index) ? "#d5d5d5" : "#cfcfcf")};
 border-radius: 5px;
-color: ${(props) => !props.days.includes(props.index) ? "dbdbdb" : "#ffffff"};
+color: ${(props) => !props.days.includes(props.index) ? "#dbdbdb" : "#ffffff"};
 font-size: 20px;
 
 
