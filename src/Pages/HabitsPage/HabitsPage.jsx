@@ -5,7 +5,7 @@ import { UserDataContext } from "../../Context/userData";
 import { HABITS_URL } from "../../constants/urls";
 //import { PageWithLoading } from "../../components/PageWithLoading/PageWithLoading";
 import axios from "axios";
-//import Header from "../../components/Header/Header";
+import Header from "../../components/Header/Header";
 //import CreatesNewHabit from "../../components/CreatesNewHabit/CreatesNewHabit";
 import BoardHabits from "../../components/BoardHabits/BoardHabits";
 //import Footer from "../../components/Footer/Footer";
@@ -34,6 +34,8 @@ export default function HabitsPage() {
     return (
 
         <ContainerHabits>
+
+            <Header />
 
             
             
