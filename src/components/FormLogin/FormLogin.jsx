@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Form } from "./styles";
-import { AUTH_LOGIN_URL } from "../../Constants/urls";
+import { AUTH_LOGIN_URL } from "../../constants/urls";
 import { useNavigate } from "react-router-dom";
 import { ThreeDots } from "react-loader-spinner";
 import { White } from "../../Constants/colors";
@@ -25,7 +25,7 @@ export default function FormLogin() {
         setDisable(false);
         const dataString = JSON.stringify(resp.data);
         localStorage.setItem("userDataString", dataString);
-        navigate("/hoje");
+        navigate("/habitos");
         window.location.reload()
       })
       .catch((error) => {

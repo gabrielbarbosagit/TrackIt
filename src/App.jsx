@@ -19,6 +19,7 @@ export default function App() {
           <Route path={"/"} element={<LoginPage />} />
           <Route path={"/cadastro"} element={<SignUpPage />} />
           <Route path={"/habitos"} element={<HabitsPage />} />
+          
         </Routes>
       </UserDataProvider>
 

@@ -3,12 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { ContainerHabits, TitleContainer, HabitCardContainer } from "./styles"
 import { UserDataContext } from "../../Context/userData";
 import { HABITS_URL } from "../../constants/urls";
-import { PageWithLoading } from "../../components/PageWithLoading/PageWithLoading";
+//import { PageWithLoading } from "../../components/PageWithLoading/PageWithLoading";
 import axios from "axios";
-import Header from "../../components/Header/Header";
-import CreatesNewHabit from "../../components/CreatesNewHabit/CreatesNewHabit";
+//import Header from "../../components/Header/Header";
+//import CreatesNewHabit from "../../components/CreatesNewHabit/CreatesNewHabit";
 import BoardHabits from "../../components/BoardHabits/BoardHabits";
-import Footer from "../../components/Footer/Footer";
+//import Footer from "../../components/Footer/Footer";
 
 
 export default function HabitsPage() {
@@ -35,8 +35,8 @@ export default function HabitsPage() {
 
         <ContainerHabits>
 
-            <Header />
-            <PageWithLoading isLoading={habits.length === 0}>
+            
+            
 
                 <TitleContainer>
                     <h2>Meus Hábitos</h2>
@@ -51,10 +51,7 @@ export default function HabitsPage() {
 
                 </TitleContainer>
 
-                <CreatesNewHabit
-                    displayMode={setCardVisibility} />
-
-                {habits.length > 0 ? (<HabitCardContainer>
+                =<HabitCardContainer>
 
                     {habits.map((h, i) => (
 
@@ -70,13 +67,13 @@ export default function HabitsPage() {
                     ))}
 
                 </HabitCardContainer>
-                ) : (
+                 : (
 
                     <p> Você ainda não tem nenhum hábito cadastrado. Adicione um hábito para começar trackear! </p>
-                )}
+                )
 
-            </PageWithLoading>
-            < Footer />
+           
+            
         </ContainerHabits>
     );
 }
