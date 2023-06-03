@@ -76,4 +76,21 @@ export default function ButtonCard({
 
             <ButtonSave
             onClick={buttonClick}
-        )
+            disabled={modeDisable}
+            color={color}
+            background={background}
+            hover={hover}
+            data-test={content === "Salvar" ? "habit-create-btn" : "habit-create-cancel-btn" }
+
+            >
+                {modeDisable ? (
+                    <ThreeDots color={White} height="12" width="40" />
+
+                ) : (
+                    
+                    content
+                )}
+
+            </ButtonSave>
+        );
+                }
