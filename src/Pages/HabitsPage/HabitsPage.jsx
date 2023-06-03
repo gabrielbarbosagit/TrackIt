@@ -8,7 +8,7 @@ import axios from "axios";
 import Header from "../../components/Header/Header";
 //import CreatesNewHabit from "../../components/CreatesNewHabit/CreatesNewHabit";
 import BoardHabits from "../../components/BoardHabits/BoardHabits";
-//import Footer from "../../components/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 
 
 export default function HabitsPage() {
@@ -71,6 +71,8 @@ export default function HabitsPage() {
                 </HabitCardContainer>
                 
                     <p> Você ainda não tem nenhum hábito cadastrado. Adicione um hábito para começar trackear! </p>
+
+                    <Footer />
                 
 
            

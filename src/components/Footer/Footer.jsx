@@ -29,7 +29,7 @@ export default function Footer() {
                 <CircularProgressbar
                 value={percentage}
                 background
-                backgroundPadding={8}
+                backgroundPadding={5}
                 styles={buildStyles({strokeLinecap: 'round', textSize: '18px', pathColor: White, textColor: White, trailColor: 'transparent', backgroundColor:Blue})}
                 />
             </CustomCircularProgress>
