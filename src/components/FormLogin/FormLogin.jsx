@@ -3,7 +3,7 @@ import { Form } from "./styles";
 import { AUTH_LOGIN_URL } from "../../constants/urls";
 import { useNavigate } from "react-router-dom";
 import { ThreeDots } from "react-loader-spinner";
-import { White } from "../../Constants/colors";
+import { White } from "../../constants/colors";
 import axios from "axios";
 
 export default function FormLogin() {
@@ -25,7 +25,7 @@ export default function FormLogin() {
         setDisable(false);
         const dataString = JSON.stringify(resp.data);
         localStorage.setItem("userDataString", dataString);
-        navigate("/habitos");
+        navigate("/hoje");
         window.location.reload()
       })
       .catch((error) => {
