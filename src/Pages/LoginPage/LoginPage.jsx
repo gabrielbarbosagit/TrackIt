@@ -10,7 +10,7 @@ export default function LoginPage() {
 
             <Logo src={logo} alt="Logo TrackIt" />
             <FormLogin />
-            <Link to="/cadastro" data-test="login-btn">
+            <Link to="/cadastro" data-test="signup-link">
                 <p> Não tem uma conta? Cadastre-se! </p>
             </Link>
         </ContainerLogin>
