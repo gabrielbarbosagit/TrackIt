@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Form } from "./styles";
-import { AUTH_SIGNUP_URL } from "../../Constants/urls";
+import { AUTH_SIGNUP_URL } from "../../constants/urls";
 import { useNavigate } from "react-router-dom";
 import { ThreeDots } from "react-loader-spinner";
-import { White } from "../../Constants/colors";
+import { White } from "../../constants/colors";
 import axios from "axios";
 
 export default function FormSignUp() {
