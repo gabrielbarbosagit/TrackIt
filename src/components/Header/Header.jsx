@@ -3,7 +3,7 @@ import { UserDataContext } from "../../Context/userData";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import iconUser from "../../assets/iconUser.png";
-import TrackIt from "../../assets/trackIt.png";
+import TrackIt from "../../assets/TrackIt.png";
 
 
 
